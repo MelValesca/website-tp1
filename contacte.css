@@ -1,0 +1,116 @@
+.par-dessus {
+  position: fixed;
+  top: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  right: 0rem;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.par-dessus:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 240px auto;
+  padding: 5px 20px;
+  background: #f2f4ff;
+  color: #17377e;
+  border-radius: 5px;
+  width: 50%;
+  height: 48%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  box-shadow: inset 0 0 10px #49494a;
+}
+
+#fixe .popup .ferme {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  color: #17377e;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#fixe label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+#fixe .popup .contenu {
+  top: 45px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+#fixe .popup .ferme:hover {
+  color: rgb(137, 160, 237);
+}
+
+#fixe .control {
+  margin-bottom: 0.5rem;
+  width: 48%;
+}
+
+#fixe .nouvelles {
+  display: flex;
+  align-items: center;
+  margin-top: 0.9rem;
+}
+
+@media screen and (max-width: 950px) {
+  .popup {
+    width: 70%;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  .popup {
+    margin-top:20%;
+    width: 40%;
+    height: 350px;
+  }
+}
+
+#fixe input[type="text"],
+#fixe input[type="email"],
+#fixe textarea {
+  display: block;
+  font: inherit;
+  border-radius: 2px;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  padding: 0.25rem;
+  width: 100%;
+  resize: none;
+  box-shadow: inset 2px 2px 2px #a7bfd6, inset -2px -2px 2px white;
+}
+
+#fixe div.message {
+  width: 100%;
+}
+
+
+
+#fixe div.infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+#fixe input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+#fixe .action {
+  margin-top: 0px;
+}

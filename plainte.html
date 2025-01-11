@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="formulaire.css">
+  <link rel="stylesheet" type="text/css" href="contacte.css">
+  <title>MV Légal Inc.</title>
+  <link rel="icon" type="image/png"
+    href="https://cdn4.iconfinder.com/data/icons/success-filloutline/64/law-scale-justice-judge-balance-512.png">
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <img src="https://cdn4.iconfinder.com/data/icons/success-flat-1/64/law-scale-justice-judge-balance-512.png"
+        alt="logo balance">MV&nbsp;Légal&nbsp;Inc.
+    </div>
+    <nav>
+      <ul class="nav">
+        <li class="nav">
+          <a href="index.html">Accueil</a>
+        </li>
+        <li class="nav">
+          <a href="services.html">Services</a>
+        </li>
+        <li class="nav">
+          <a href="honoraire.html">Honoraires</a>
+        </li>
+        <li class="nav">
+          <a href="apropos.html">À&nbsp;propos</a>
+        </li>
+        <li class="nav" id="active">
+          <a href="plainte.html">Plainte</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <span class="image" id="plainte">Formulez une plainte</span>
+  <div id="main">
+    <hr>
+    <article>
+      <h2>Vous avez un problème ?</h2>
+      <p>
+        Nous prenons très au sérieux toutes les plaintes que nous recevons et
+        nous sommes déterminés à résoudre rapidement et efficacement toute
+        situation problématique.
+      </p>
+      <p>
+        Nous comprenons que faire une plainte peut être un processus
+        difficile, mais nous sommes là pour vous aider à travers chaque étape.
+        Nous vous encourageons à remplir le formulaire de plainte ci-dessous
+        avec autant de détails que possible afin que nous puissions enquêter
+        sur votre situation de manière approfondie. Nous nous engageons à
+        maintenir la confidentialité de toutes les informations que vous nous
+        fournissez.
+      </p>
+
+      <p>
+        Chez notre entreprise d'avocats, nous croyons que la communication
+        ouverte et honnête est la clé de toute relation professionnelle
+        réussie. Nous sommes engagés à fournir des services juridiques de la
+        plus haute qualité et à traiter tous nos clients avec respect et
+        équité. Si vous avez des préoccupations concernant notre entreprise ou
+        si vous souhaitez discuter de votre plainte avec l'un de nos
+        représentants, n'hésitez pas à nous contacter.
+      </p>
+
+      <p>
+        Nous sommes là pour vous aider et nous sommes déterminés à résoudre
+        tout problème que vous pourriez rencontrer. Nous vous remercions de
+        votre confiance en notre entreprise d'avocats et nous nous engageons à
+        travailler dur pour restaurer votre confiance et votre satisfaction.
+      </p>
+    </article>
+    <hr>
+    <div class="boite">
+      <form>
+        <h2>Formulaire</h2>
+        <div class="contenant">
+          <img src="https://cdn4.iconfinder.com/data/icons/success-flat-1/64/law-scale-justice-judge-balance-512.png"
+            alt="logo">
+          <div>
+            <div class="control">
+              <label for="nom"> Nom <span class="obligatoire">*</span></label>
+              <input type="text" name="nom" id="nom" required>
+            </div>
+            <div class="control">
+              <label for="prenom">
+                Prénom <span class="obligatoire">*</span></label>
+              <input type="text" name="prenom" id="prenom" required>
+            </div>
+            <div class="control">
+              <label for="courriel">
+                Adresse courriel <span class="obligatoire">*</span></label>
+              <input type="email" name="courriel" id="courriel" placeholder="nom@domaine.com" required>
+            </div>
+            <div class="control">
+              <label for="telephone">
+                Téléphone <span class="obligatoire">*</span></label>
+              <input type="tel" name="telephone" id="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="XXX-XXX-XXXX" required>
+            </div>
+          </div>
+        </div>
+        <div class="control">
+          <label for="probleme">
+            Parlez-nous de votre problème <span class="obligatoire">*</span>
+          </label>
+          <textarea name="probleme" id="probleme" rows="7" placeholder="Que s'est-il passé?" required></textarea>
+        </div>
+        <div class="action">
+          <button class="bouton">Soumettre</button>
+        </div>
+      </form>
+    </div>
+    <hr>
+  </div>
+  <div id="fixe">
+    <a href="#plainte">
+      <div class="back-to-top">^</div>
+    </a>
+    <div class="box">
+      <a href="#contactez-nous">
+        <div class="contacte">Contactez-nous</div>
+      </a>
+    </div>
+
+    <div id="contactez-nous" class="par-dessus">
+      <div class="popup">
+        <form>
+          <h4>Contactez-nous</h4>
+          <a class="ferme" href="#">X</a>
+
+          <div class="infos">
+            <div class="control"><label for="nomComplet">Nom complet</label>
+              <input type="text" id="nomComplet" name="nomComplet">
+            </div>
+            <div class="control"><label for="mail">Adresse courriel</label>
+              <input type="email" id="mail" name="mail">
+            </div>
+          </div>
+          <div class="message">
+            <label for="message">Votre message:</label>
+            <textarea name="message" id="message" rows="5"></textarea>
+          </div>
+          <div class="nouvelles">
+            <input type="checkbox" id="nouvelles" name="nouvelles" checked>
+            <label for="nouvelles">Vous abonnez à nos nouvelles</label>
+          </div>
+
+          <div class="action">
+            <button class="bouton">Soumettre</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="fb">
+      <img src="https://www.freeiconspng.com/uploads/facebook-logo-png-2-0.png" alt="facebook">
+      <a href="http://www.facebook.com">Suivez-nous!</a>
+    </div>
+    <span class="foot">© Mélissa Vallée (Sauf les images)</span>
+    <div></div>
+  </footer>
+</body>
+
+</html>
