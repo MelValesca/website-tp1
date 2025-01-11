@@ -1,6 +1,6 @@
 # Projet HTML/CSS - Readme
 
-Ce projet a été réalisé par Mélissa Vallée, numéro étudiant VALM22549307, 
+Ce projet a été réalisé par Mélissa Vallée,
 dans le cadre du cours de programmation web (INF3190) remis par Jacques 
 Berger.
 
